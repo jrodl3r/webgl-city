@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  font-family: Monospace;
+  background-color: #d8e7ff;
+  cursor: crosshair;
+  overflow: hidden;
+}
