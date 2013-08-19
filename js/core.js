@@ -45,7 +45,6 @@ function init() {
 	light = new THREE.Color( 0xffffff );
 	shadow = new THREE.Color( 0x303050 );
 	// generate city mesh
-	//var cityGeometry= new THREE.Geometry();
 	for( var i = 0; i < 20000; i++ ){
 
 		var value = 1 - Math.random() * Math.random();
@@ -138,9 +137,8 @@ function generateTexture(){
 function animate() {
 
 	requestAnimationFrame( animate );
-
+	
 	var time = performance.now() / 1000;
-
 	controls.update( time - lastTime );
 	renderer.render( scene, camera );
 
